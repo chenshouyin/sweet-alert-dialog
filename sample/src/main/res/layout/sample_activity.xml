@@ -23,19 +23,40 @@
             android:layout_alignLeft="@id/logo_img"
             android:layout_below="@id/logo_img"
             android:layout_marginLeft="15dp"
-            android:text="show material progress"
+            android:text="加载中..."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#797979"/>
 
         <Button
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/txt_0"
+            android:id="@+id/progress_dialog_0"
+            style="@style/dialog_blue_button"
+            android:text="进度条"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/txt_0"
+            android:layout_alignLeft="@+id/basic_test"
+            android:layout_alignStart="@+id/basic_test" />
+
+        <TextView
+            android:id="@+id/txt_1_0"
+            android:layout_alignLeft="@id/logo_img"
+            android:layout_below="@id/progress_dialog_0"
+            android:layout_marginLeft="15dp"
+            android:text="加载中..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#797979"/>
+
+
+        <Button
             android:id="@+id/progress_dialog"
             style="@style/dialog_blue_button"
-            android:layout_margin="10dp"
-            android:text="Try me!"/>
+            android:text="Try me!"
+            android:layout_below="@+id/txt_1_0"
+            android:layout_alignLeft="@+id/basic_test"
+            android:layout_alignStart="@+id/basic_test" />
 
         <TextView
             android:id="@+id/txt_1"
